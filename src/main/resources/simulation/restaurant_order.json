@@ -1,0 +1,26 @@
+{
+  "simulationId": "restaurant_order",
+  "title": "Place an Order at a Restaurant",
+  "type": "conversation",
+  "languageLevel": "Beginner",
+  "context": "You are ordering food at a restaurant. Respond naturally to place your order.",
+  "initialPrompt": "Hi, welcome to ApolloMeals. What would you like to order?",
+  "role": "restaurant_server",
+  "factors": [
+    "Greet the staff",
+    "Order your starter",
+    "Order your entrée(main item)",
+    "Add additional items if needed",
+    "Confirm order"
+  ],
+  "flow": [
+    "What starter would you like to order?",
+    "What about your entrée?",
+    "Would you like anything else with that? Any drinks?",
+    "Perfect, I’ll go right back and your food will come in a few seconds."
+  ],
+  "triggers": [
+    "Thank you, your order will be ready shortly.",
+    "Enjoy your meal!"
+  ]
+}

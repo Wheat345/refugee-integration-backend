@@ -1,0 +1,24 @@
+{
+  "simulationId": "emergency_call",
+  "title": "Emergency Call",
+  "type": "conversation",
+  "languageLevel": "Intermediate",
+  "context": "You are calling 911 for an ambulance to help your cousin, who fainted and isn’t breathing. Respond appropriately to the receiver’s questions.",
+  "initialPrompt": "911, what’s your emergency?",
+  "role": "911_dispatcher",
+  "factors": [
+    "State the situation",
+    "Explain the condition or state of the person needing medical help",
+    "State the need for an ambulance",
+    "State the address or describe the location"
+  ],
+  "flow": [
+    "I need you to stay calm for me. Is your cousin breathing?",
+    "Do you need an ambulance?",
+    "Could you tell me the address of where you are?",
+    "Ok, in the meantime, keep him warm and don’t leave his side until we get there."
+  ],
+  "triggers": [
+    "Please remain calm; help is on the way."
+  ]
+}

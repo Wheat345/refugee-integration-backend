@@ -1,0 +1,21 @@
+{
+  "simulationId": "allergies_discussion",
+  "title": "Allergies Discussion",
+  "type": "conversation",
+  "languageLevel": "Intermediate",
+  "context": "You’re receiving medication that has gluten, which you’re allergic to (you had intense rashes last time). Respond appropriately to the doctor’s questions.",
+  "initialPrompt": "Here’s the medication, do you have any allergies?",
+  "role": "doctor",
+  "factors": [
+    "State the allergen",
+    "State the severity of the allergy"
+  ],
+  "flow": [
+    "Ok, what are you allergic to?",
+    "How severe is it?",
+    "Ok, I’ll prescribe you a different medication without it. Have a nice day!"
+  ],
+  "triggers": [
+    "Ok, I’ve prescribed a different medication without it. Have a nice day!"
+  ]
+}

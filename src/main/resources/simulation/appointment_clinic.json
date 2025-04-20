@@ -1,0 +1,27 @@
+{
+  "simulationId": "appointment_clinic",
+  "title": "Book a Clinic Appointment",
+  "type": "conversation",
+  "languageLevel": "Intermediate",
+  "context": "You are calling a clinic to book an appointment for your child. Respond appropriately to the receptionist's questions.",
+  "initialPrompt": "Thank you for calling Maple Family Clinic. How can I assist you with your appointment today?",
+  "role": "clinic_receptionist",
+  "factors": [
+    "Provide child's full name and age",
+    "State the reason for the appointment",
+    "Specify your availability",
+    "Confirm appointment details",
+    "Express appreciation"
+  ],
+  "flow": [
+    "Can I have the patient’s full name and age, please?",
+    "What symptoms are they experiencing?",
+    "What date and time are you available for an appointment?",
+    "Does the patient have any known allergies or medical conditions?",
+    "Thank you. Would you like me to confirm the appointment now?"
+  ],
+  "triggers": [
+    "Thank you. Your appointment is confirmed.",
+    "Okay, see you at the clinic."
+  ]
+}

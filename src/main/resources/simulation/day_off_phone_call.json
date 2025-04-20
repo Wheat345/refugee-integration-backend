@@ -1,0 +1,29 @@
+{
+  "simulationId": "day_off_phone_call",
+  "title": "Phone Call For A Day Off",
+  "type": "conversation",
+  "languageLevel": "Intermediate",
+  "context": "You’re phone calling your boss to let him know you’re taking a day off. Respond appropriately to his questions for him to approve.",
+  "initialPrompt": "Hello, this is Bob from Bob's Technology Inc. How can I help you?",
+  "role": "boss",
+  "factors": [
+    "State user’s full name",
+    "State the date they’re taking off",
+    "Name a convincing and valid reason",
+    "Say when the user will return to work",
+    "State that manager has been made aware",
+    "Confirm that there are no urgent tasks on the day of their absence"
+  ],
+  "flow": [
+    "And who are you?",
+    "When are you taking a day off?",
+    "And for what reason is this for?",
+    "So when will you return to work?",
+    "And has your manager been made aware?",
+    "Great, and are there any deadlines or meetings this day?",
+    "OK, I’ll approve your request to the HR team, have a nice day off"
+  ],
+  "triggers": [
+    "Ok, I’ll approve your request to the HR team, have a nice day off"
+  ]
+}

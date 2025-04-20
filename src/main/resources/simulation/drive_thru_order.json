@@ -1,0 +1,27 @@
+{
+  "simulationId": "drive_thru_order",
+  "title": "Order At A Drive Thru",
+  "type": "conversation",
+  "languageLevel": "Beginner",
+  "context": "You are ordering food at a fast-food drive thru. Respond naturally to place your order.",
+  "initialPrompt": "Hi, thanks for choosing ApolloMeals. What would you like to order today?",
+  "role": "drive_thru_operator",
+  "factors": [
+    "Greet the staff",
+    "Order your main item",
+    "Choose combo or single item",
+    "Add additional items if needed",
+    "Confirm order and payment"
+  ],
+  "flow": [
+    "Would you like the combo or just that?",
+    "Do you want any extra drinks or fries with that?",
+    "Ok, would you like to order anything else?",
+    "Perfect. How would you like to pay?",
+    "Thank you! Please pull up to the window when you’re called to pay your total."
+  ],
+  "triggers": [
+    "Thank you for choosing ApolloMeals",
+    "Enjoy your meal!"
+  ]
+}

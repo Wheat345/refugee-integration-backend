@@ -1,0 +1,24 @@
+{
+  "simulationId": "appointment_check_in",
+  "title": "Appointment Check-In",
+  "type": "conversation",
+  "languageLevel": "Intermediate",
+  "context": "You’re in Dr. Juniper’s clinic at the front desk to check-in for your doctor appointment",
+  "initialPrompt": "Welcome to Dr. Juniper’s clinic, how can I help you?",
+  "role": "clinic_receptionist",
+  "factors": [
+    "State that you’re here for an appointment",
+    "State the patient’s name",
+    "State what the appointment was for",
+    "State the scheduled time of the appointment"
+  ],
+  "flow": [
+    "Could you tell me the name of the patient whom the appointment was for?",
+    "What was the appointment for again?",
+    "And when was it scheduled for?",
+    "Ok, I’ll send a message to the doctor that you’ve arrived. Please take a seat and wait in the meantime."
+  ],
+  "triggers": [
+    "Ok, I’ll send a message to the doctor that you’ve arrived. Please take a seat and wait in the meantime."
+  ]
+}
