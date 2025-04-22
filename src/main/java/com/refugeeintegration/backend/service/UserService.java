@@ -133,6 +133,7 @@ public class UserService {
         LoginResponse response = new LoginResponse();
         response.setUserId(user.getUserId());
         response.setName(user.getName());
+        response.setLanguage(user.getLanguage());
         response.setCategories(progressList);
         return response;
     }

@@ -28,6 +28,8 @@ public class User {
 
     private LocalDateTime modifyDate;
 
+    private String language;
+
     @ManyToOne
     @JoinColumn(name = "family_id", nullable = true)
     private Family family;

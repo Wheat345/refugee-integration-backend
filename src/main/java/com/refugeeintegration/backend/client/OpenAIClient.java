@@ -14,7 +14,7 @@ import java.io.IOException;
 
 @Component
 public class OpenAIClient {
-    private static final String OPENAI_API_KEY = "mask";
+    private static final String OPENAI_API_KEY = "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";
     private static final String OPENAI_URL = "https://api.openai.com/v1/embeddings";
     private static final String OPENAI_CHAT_URL = "https://api.openai.com/v1/chat/completions";
     private static final OkHttpClient client = new OkHttpClient();  // Reuse HTTP client for performance

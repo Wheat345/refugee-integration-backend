@@ -7,6 +7,7 @@ import java.util.List;
 public class LoginResponse {
     private Long userId;
     private String name;
+    private String language;
     private List<CategoryProgress> categories;
 
     @Data
