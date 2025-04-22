@@ -17,7 +17,7 @@ import java.util.Map;
 @RequiredArgsConstructor
 public class ConversationEvalService {
     private final OkHttpClient client = new OkHttpClient();
-    private static final String OPENAI_API_KEY = "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";
+    private static final String OPENAI_API = "mask";
     private static final String OPENAI_URL = "https://api.openai.com/v1/embeddings";
     private static final String OPENAI_CHAT_URL = "https://api.openai.com/v1/chat/completions";
 
@@ -74,7 +74,7 @@ public class ConversationEvalService {
 
         Request request = new Request.Builder()
                 .url(OPENAI_CHAT_URL)
-                .header("Authorization", "Bearer " + OPENAI_API_KEY)
+                .header("Authorization", "Bearer " + OPENAI_API)
                 .post(RequestBody.create(requestBody.toString(), MediaType.parse("application/json")))
                 .build();
 
