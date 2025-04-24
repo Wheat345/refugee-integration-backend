@@ -33,134 +33,93 @@ This backend powers the key features of the mobile app, including:
 
 ## API Reference Guide
 
-This document explains each API endpoint, including its URL, required parameters, and expected response.
-
-⸻
-
 1. Login API
-	•	URL: /api/user/login
-	•	Method: POST
-	•	Input Parameters (JSON):
-
+• URL: /api/user/login
+• Method: POST
+• Input Parameters (JSON):
 {
   "email": "user@example.com",
   "password": "yourpassword"
 }
-
-	•	Output:
-
+• Output:
 {
   "userId": 1,
   "username": "User Name",
-  "token": "jwt-token"
+  "password": "abc123",
+  “userLanguage”: “French”
 }
 
-
-
-⸻
-
 2. Signup API
-	•	URL: /api/user/signup
-	•	Method: POST
-	•	Input Parameters (JSON):
-
+• URL: /api/user/signup
+• Method: POST
+• Input Parameters (JSON):
 {
   "email": "user@example.com",
   "password": "yourpassword",
   "username": "User Name"
 }
-
-	•	Output:
-
+• Output:
 {
   "message": "Signup successful",
   "userId": 2
+  
 }
 
-
-
-⸻
-
 3. Start Conversation (Conversation-type Simulation)
-	•	URL: /api/ai/conversation/start
-	•	Method: GET
-	•	Query Parameter:
-	•	simulationId: ID of the simulation (e.g., appointment_clinic)
-	•	Output:
-
+• URL: /api/ai/conversation/start
+• Method: GET
+• Input Parameters:
+• simulationId: ID of the simulation (e.g., appointment_clinic)
+• Output:
 {
   "conversationId": "uuid-value",
   "initialPrompt": "Hello, how can I help you?"
 }
 
-
-
-⸻
-
 4. Reply to Conversation
-	•	URL: /api/ai/conversation/reply
-	•	Method: POST
-	•	Input Parameters (JSON):
-
+• URL: /api/ai/conversation/reply
+• Method: POST
+• Input Parameters (JSON):
 {
   "conversationId": "uuid-value",
   "userMessage": "I want to make an appointment"
 }
-
-	•	Output:
-
+• Output:
 {
   "aiMessage": "What date would you prefer?",
   "step": 2
 }
 
-
-
-⸻
-
 5. Evaluate Conversation (Get Feedback)
-	•	URL: /api/ai/conversation/evaluate
-	•	Method: GET
-	•	Query Parameter:
-	•	conversationId
-	•	Output:
-
+• URL: /api/ai/conversation/evaluate
+• Method: GET
+• Input Parameters:
+• conversationId
+• Output:
 {
   "scoreFeedback": "Score: 75/100. Feedback: ...",
   "completed": true
 }
 
-
-
-⸻
-
 6. Factor-type Simulation Evaluation API
-	•	URL: /api/ai/agentFeedback
-	•	Method: GET
-	•	Query Parameters:
-	•	question: The interview question (e.g., “What kind of job are you looking for?”)
-	•	userAnswer: The user’s response
-	•	Output:
-	•	Feedback string comparing userAnswer to ideal answer from Pinecone
-
-⸻
+• URL: /api/ai/agentFeedback
+• Method: GET
+• Input Parameters:
+• question: The interview question (e.g., “What kind of job are you looking for?”)
+• userAnswer: The user’s response
+• Output:
+• Feedback string comparing userAnswer to ideal answer from Pinecone
 
 7. Update User Simulation Status
-	•	URL: /api/user-simulation/update
-	•	Method: POST
-	•	Input Parameters (JSON):
-
+• URL: /api/user-simulation/update
+• Method: POST
+• Input Parameters (JSON):
 {
   "userId": 15,
   "simulationId": 13,
   "newScore": 80,
   "completed": true
 }
-
-	•	Output:
-
+• Output:
 "✅ UserSimulation updated successfully"
-
-
-
-
+---
